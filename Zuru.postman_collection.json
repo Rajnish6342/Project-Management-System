@@ -1,0 +1,1479 @@
+{
+	"info": {
+		"_postman_id": "26353e8e-0f99-48ce-913b-4609c5b9c69b",
+		"name": "Zuru",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "List All Projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/project?limit=10&offset=0&type=PUBLIC",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "type",
+									"value": "PUBLIC",
+									"description": "Remove this to get both"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List All Projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/project/?limit=1&offset=0&type=PRIVATE",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										""
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "PRIVATE"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1316"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"524-gqrssv1ZbKcpDJ9tVCRRFZSmTvc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 18:45:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"projects\": [\n            {\n                \"_id\": \"633d2c95fc13ae2cb400000d\",\n                \"title\": \"Compensation Analyst\",\n                \"description\": \"Toxic effect of unsp gases, fumes and vapors, acc, sequela\",\n                \"type\": \"PRIVATE\",\n                \"members\": [\n                    {\n                        \"role\": \"ADMIN\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000000\",\n                            \"name\": \"Ronnica Birks\",\n                            \"email\": \"rbirks0@a8.net\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T11:03:35.160Z\",\n                            \"updatedAt\": \"2022-10-05T11:03:35.160Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb400000e\",\n                        \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                    },\n                    {\n                        \"role\": \"EDIT\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000001\",\n                            \"name\": \"Kayla Benadette\",\n                            \"email\": \"kbenadette1@joomla.org\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb400000f\",\n                        \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                    },\n                    {\n                        \"role\": \"VIEW\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000002\",\n                            \"name\": \"Lacey Bertwistle\",\n                            \"email\": \"lbertwistle2@globo.com\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb4000010\",\n                        \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                    }\n                ],\n                \"__v\": 0,\n                \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                \"updatedAt\": \"2022-10-05T11:03:35.167Z\",\n                \"id\": \"633d2c95fc13ae2cb400000d\"\n            }\n        ],\n        \"count\": 2\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project fetched successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Unshare Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":\"633dd7c310b5442766a83600\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/project/unshare/633dd6dcfe75bcb4895103cc",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"unshare",
+								"633dd6dcfe75bcb4895103cc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unshare Project",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"userId\":\"633dd7c310b5442766a83600\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/project/unshare/633dc4eddf6dc35df73713be",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"unshare",
+										"633dc4eddf6dc35df73713be"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-HUe4Y60B+d9E6pgPVn4RNyWWU18\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 17:53:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"statusCode\": 200,\n    \"statusMessage\": \"Member removed successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Demo title\",\n    \"description\": \"a description\",\n    \"type\": \"PRIVATE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/project/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Demo title\",\n    \"description\": \"a description\",\n    \"type\": \"PRIVATE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/project/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "619"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"26b-SwjYRQfDqWQirJvYVgAX9ZGxc2E\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 17:54:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"title\": \"Demo title\",\n        \"description\": \"a description\",\n        \"type\": \"PRIVATE\",\n        \"members\": [\n            {\n                \"role\": \"ADMIN\",\n                \"user\": {\n                    \"_id\": \"633d26d4fc13ae7851000001\",\n                    \"name\": \"Kayla Benadette\",\n                    \"email\": \"kbenadette1@joomla.org\",\n                    \"__v\": 0,\n                    \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                },\n                \"_id\": \"633dc4eddf6dc35df73713bf\",\n                \"createdAt\": \"2022-10-05T17:54:53.183Z\",\n                \"updatedAt\": \"2022-10-05T17:54:53.183Z\"\n            }\n        ],\n        \"_id\": \"633dc4eddf6dc35df73713be\",\n        \"createdAt\": \"2022-10-05T17:54:53.184Z\",\n        \"updatedAt\": \"2022-10-05T17:54:53.184Z\",\n        \"__v\": 0,\n        \"id\": \"633dc4eddf6dc35df73713be\"\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project created Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Title updated\",\n    \"description\": \"description updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/project/633dc4eddf6dc35df73713be",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"633dc4eddf6dc35df73713be"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Project",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Title updated\",\n    \"description\": \"description updated\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/project/633dc4eddf6dc35df73713be",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"633dc4eddf6dc35df73713be"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "476"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1dc-RCawE/OH8L1SDXkPn0ztacuTm+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 17:56:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"_id\": \"633dc4eddf6dc35df73713be\",\n        \"title\": \"Title updated\",\n        \"description\": \"description updated\",\n        \"type\": \"PRIVATE\",\n        \"members\": [\n            {\n                \"role\": \"ADMIN\",\n                \"user\": \"633d26d4fc13ae7851000001\",\n                \"_id\": \"633dc4eddf6dc35df73713bf\",\n                \"createdAt\": \"2022-10-05T17:54:53.183Z\",\n                \"updatedAt\": \"2022-10-05T17:54:53.183Z\"\n            }\n        ],\n        \"createdAt\": \"2022-10-05T17:54:53.184Z\",\n        \"updatedAt\": \"2022-10-05T17:56:13.033Z\",\n        \"__v\": 0,\n        \"id\": \"633dc4eddf6dc35df73713be\"\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project updated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Share Project",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"rajnisaz1h@gmail.com\",\n    \"role\":\"EDIT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/project/share/633dd6dcfe75bcb4895103cc",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"share",
+								"633dd6dcfe75bcb4895103cc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Share Project",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"rajnisazh@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/project/share/633d81945b6ad53556b99d50",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"share",
+										"633d81945b6ad53556b99d50"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "918"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"396-ib7GXfk3WUjfPtx9OUV/Ub1YNoc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 17:57:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"_id\": \"633d81945b6ad53556b99d50\",\n        \"title\": \"Dummy Projecaatzzzzzqqxxq\",\n        \"type\": \"PUBLIC\",\n        \"members\": [\n            {\n                \"role\": \"ADMIN\",\n                \"user\": {\n                    \"_id\": \"633d26d4fc13ae7851000001\",\n                    \"name\": \"Kayla Benadette\",\n                    \"email\": \"kbenadette1@joomla.org\",\n                    \"__v\": 0,\n                    \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                },\n                \"_id\": \"633d81945b6ad53556b99d51\",\n                \"createdAt\": \"2022-10-05T13:07:32.455Z\",\n                \"updatedAt\": \"2022-10-05T13:07:32.455Z\"\n            },\n            {\n                \"role\": \"VIEW\",\n                \"user\": {\n                    \"_id\": \"633dc590df6dc35df73713d0\",\n                    \"email\": \"rajnisazh@gmail.com\",\n                    \"createdAt\": \"2022-10-05T17:57:36.897Z\",\n                    \"updatedAt\": \"2022-10-05T17:57:36.897Z\",\n                    \"__v\": 0\n                },\n                \"_id\": \"633dc590df6dc35df73713d3\",\n                \"createdAt\": \"2022-10-05T17:57:36.900Z\",\n                \"updatedAt\": \"2022-10-05T17:57:36.900Z\"\n            }\n        ],\n        \"createdAt\": \"2022-10-05T13:07:32.455Z\",\n        \"updatedAt\": \"2022-10-05T17:57:36.900Z\",\n        \"__v\": 0,\n        \"description\": \"Demo description\",\n        \"id\": \"633d81945b6ad53556b99d50\"\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Member added successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List User Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/v1/project/user/633d26d4fc13ae7851000001",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"user",
+								"633d26d4fc13ae7851000001"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List User Projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/v1/project/633d26d4fc13ae7851000000",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"633d26d4fc13ae7851000000"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9c8-wChRuMyxkkMp5ZilGEolgNAodvk\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 17:59:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"633d2c95fc13ae2cb400000d\",\n            \"title\": \"Compensation Analyst\",\n            \"description\": \"Toxic effect of unsp gases, fumes and vapors, acc, sequela\",\n            \"type\": \"PRIVATE\",\n            \"members\": [\n                {\n                    \"role\": \"ADMIN\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000000\",\n                        \"name\": \"Ronnica Birks\",\n                        \"email\": \"rbirks0@a8.net\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.160Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.160Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb400000e\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                },\n                {\n                    \"role\": \"EDIT\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000001\",\n                        \"name\": \"Kayla Benadette\",\n                        \"email\": \"kbenadette1@joomla.org\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb400000f\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                },\n                {\n                    \"role\": \"VIEW\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000002\",\n                        \"name\": \"Lacey Bertwistle\",\n                        \"email\": \"lbertwistle2@globo.com\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb4000010\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                }\n            ],\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.167Z\",\n            \"id\": \"633d2c95fc13ae2cb400000d\"\n        },\n        {\n            \"_id\": \"633d2c95fc13ae2cb4000012\",\n            \"title\": \"Statistician III\",\n            \"description\": \"Breakdown of bone devices, implants and grafts, sequela\",\n            \"type\": \"PUBLIC\",\n            \"members\": [\n                {\n                    \"role\": \"VIEW\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000000\",\n                        \"name\": \"Ronnica Birks\",\n                        \"email\": \"rbirks0@a8.net\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.160Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.160Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb4000013\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                },\n                {\n                    \"role\": \"EDIT\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000001\",\n                        \"name\": \"Kayla Benadette\",\n                        \"email\": \"kbenadette1@joomla.org\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb4000014\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                },\n                {\n                    \"role\": \"ADMIN\",\n                    \"user\": {\n                        \"_id\": \"633d26d4fc13ae7851000002\",\n                        \"name\": \"Lacey Bertwistle\",\n                        \"email\": \"lbertwistle2@globo.com\",\n                        \"__v\": 0,\n                        \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n                        \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n                    },\n                    \"_id\": \"633d2c95fc13ae2cb4000015\",\n                    \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n                    \"updatedAt\": \"2022-10-05T11:03:35.167Z\"\n                }\n            ],\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.167Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.167Z\",\n            \"id\": \"633d2c95fc13ae2cb4000012\"\n        }\n    ],\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project fetched successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/v1/project/633d2c95fc13ae2cb4000018",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"633d2c95fc13ae2cb4000018"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Project",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/v1/project/633dcb985cdec890307fa053",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"633dcb985cdec890307fa053"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4b-qrZIJUNJQ+JTmVA2rv2ojmIh74I\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 18:23:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project deleted Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Projects With Multiple Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/v1/project/multi-user?limit=1&offset=0&sortBy=ASC",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"project",
+								"multi-user"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "sortBy",
+									"value": "ASC",
+									"description": "ASC,DESC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Projects With Multiple Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/v1/project/multi-user?limit=1&offset=0",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"project",
+										"multi-user"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"523-kNg9AIEZpN8NmBV2TaxVb529tE8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 18:53:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"projects\": [\n            {\n                \"_id\": \"633d2c95fc13ae2cb400000d\",\n                \"title\": \"Compensation Analyst\",\n                \"description\": \"Toxic effect of unsp gases, fumes and vapors, acc, sequela\",\n                \"type\": \"PUBLIC\",\n                \"members\": [\n                    {\n                        \"role\": \"ADMIN\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000000\",\n                            \"name\": \"Ronnica Birks\",\n                            \"email\": \"rbirks0@a8.net\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T18:50:37.666Z\",\n                            \"updatedAt\": \"2022-10-05T18:50:37.666Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb400000e\",\n                        \"createdAt\": \"2022-10-05T18:50:37.672Z\",\n                        \"updatedAt\": \"2022-10-05T18:50:37.672Z\"\n                    },\n                    {\n                        \"role\": \"EDIT\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000001\",\n                            \"name\": \"Kayla Benadette\",\n                            \"email\": \"kbenadette1@joomla.org\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T18:50:37.666Z\",\n                            \"updatedAt\": \"2022-10-05T18:50:37.666Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb400000f\",\n                        \"createdAt\": \"2022-10-05T18:50:37.672Z\",\n                        \"updatedAt\": \"2022-10-05T18:50:37.672Z\"\n                    },\n                    {\n                        \"role\": \"VIEW\",\n                        \"user\": {\n                            \"_id\": \"633d26d4fc13ae7851000002\",\n                            \"name\": \"Lacey Bertwistle\",\n                            \"email\": \"lbertwistle2@globo.com\",\n                            \"__v\": 0,\n                            \"createdAt\": \"2022-10-05T18:50:37.667Z\",\n                            \"updatedAt\": \"2022-10-05T18:50:37.667Z\"\n                        },\n                        \"_id\": \"633d2c95fc13ae2cb4000010\",\n                        \"createdAt\": \"2022-10-05T18:50:37.672Z\",\n                        \"updatedAt\": \"2022-10-05T18:50:37.672Z\"\n                    }\n                ],\n                \"__v\": 0,\n                \"createdAt\": \"2022-10-05T18:50:37.672Z\",\n                \"updatedAt\": \"2022-10-05T18:50:37.672Z\",\n                \"id\": \"633d2c95fc13ae2cb400000d\"\n            }\n        ],\n        \"count\": 8\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Project fetched successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "Generate JWT Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"kbenadette1@joomla.org\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/v1/token/generate",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"token",
+								"generate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Generate JWT Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"kbenadette1@joomla.org\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/v1/token/generate",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"token",
+										"generate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f8-1K0lCqe9VMhDNhi7UUrUeq3kBjo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 18:14:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"user\": {\n            \"_id\": \"633d26d4fc13ae7851000001\",\n            \"name\": \"Kayla Benadette\",\n            \"email\": \"kbenadette1@joomla.org\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        \"token\": {\n            \"access\": {\n                \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiNjMzZDI2ZDRmYzEzYWU3ODUxMDAwMDAxIn0sImlhdCI6MTY2NDk5MzY0OSwiZXhwIjoxNjY0OTk3MjQ5fQ.7mPa-45qC9JKdcHzmFCbSxm-ey8bwX2lIa0UroYJcs0\",\n                \"expires\": \"2022-10-05T19:14:09.188Z\"\n            }\n        }\n    },\n    \"statusCode\": 200,\n    \"statusMessage\": \"Login successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/v1/user/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/v1/user/",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Embedder-Policy",
+									"value": "require-corp"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"849-kk6igt9sWuJTcR0TotbJC7zFSH8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Oct 2022 18:09:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"633d26d4fc13ae7851000000\",\n            \"name\": \"Ronnica Birks\",\n            \"email\": \"rbirks0@a8.net\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.160Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.160Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000001\",\n            \"name\": \"Kayla Benadette\",\n            \"email\": \"kbenadette1@joomla.org\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000002\",\n            \"name\": \"Lacey Bertwistle\",\n            \"email\": \"lbertwistle2@globo.com\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000003\",\n            \"name\": \"Duffie Brosenius\",\n            \"email\": \"dbrosenius3@msu.edu\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000004\",\n            \"name\": \"Consuelo Ary\",\n            \"email\": \"cary4@amazon.de\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000005\",\n            \"name\": \"Brana Forst\",\n            \"email\": \"bforst5@cbslocal.com\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.161Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.161Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000006\",\n            \"name\": \"Etty Arkle\",\n            \"email\": \"earkle6@unc.edu\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.162Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.162Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000007\",\n            \"name\": \"Giustina Circuitt\",\n            \"email\": \"gcircuitt7@epa.gov\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.162Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.162Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000008\",\n            \"name\": \"Amelia Brock\",\n            \"email\": \"abrock8@wikipedia.org\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.162Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.162Z\"\n        },\n        {\n            \"_id\": \"633d26d4fc13ae7851000009\",\n            \"name\": \"Rhona Cosgreave\",\n            \"email\": \"rcosgreave9@globo.com\",\n            \"__v\": 0,\n            \"createdAt\": \"2022-10-05T11:03:35.162Z\",\n            \"updatedAt\": \"2022-10-05T11:03:35.162Z\"\n        },\n        {\n            \"_id\": \"633d6b75e66b0216ccaa0569\",\n            \"email\": \"rajnisazh@logicwind.com\",\n            \"createdAt\": \"2022-10-05T11:33:09.385Z\",\n            \"updatedAt\": \"2022-10-05T11:33:09.385Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"633dc590df6dc35df73713d0\",\n            \"email\": \"rajnisazh@gmail.com\",\n            \"createdAt\": \"2022-10-05T17:57:36.897Z\",\n            \"updatedAt\": \"2022-10-05T17:57:36.897Z\",\n            \"__v\": 0\n        }\n    ],\n    \"statusCode\": 200,\n    \"statusMessage\": \"User fetched successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiNjMzZDI2ZDRmYzEzYWU3ODUxMDAwMDAxIn0sImlhdCI6MTY2NDk5ODI3OSwiZXhwIjoxNjY1MDAxODc5fQ.PJnBA-jJborsdMRGCFeItV9QTjYiUVcBnri1WbdhEJ8",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000"
+		}
+	]
+}
